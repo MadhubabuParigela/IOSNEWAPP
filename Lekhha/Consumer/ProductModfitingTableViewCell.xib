@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductModfitingTableViewCell" id="KGk-i7-Jjw" customClass="ProductModfitingTableViewCell" customModule="Lekhha" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGI-VP-lGw">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXk-gi-ftV">
+                                <rect key="frame" x="10" y="12" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tBB-nY-4ok"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                <color key="textColor" red="0.1764705882" green="0.2156862745" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93w-3f-snj">
+                                <rect key="frame" x="347" y="10" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.93333333330000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="W57-VN-dW5"/>
+                                    <constraint firstAttribute="width" constant="25" id="bfk-X5-kxM"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                <state key="normal" image="forward-arrow"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="93w-3f-snj" secondAttribute="trailing" constant="8" id="5ns-F4-Qi8"/>
+                            <constraint firstItem="93w-3f-snj" firstAttribute="top" secondItem="EGI-VP-lGw" secondAttribute="top" constant="10" id="7yI-sE-ocT"/>
+                            <constraint firstItem="nXk-gi-ftV" firstAttribute="leading" secondItem="EGI-VP-lGw" secondAttribute="leading" constant="10" id="WWM-Gf-EON"/>
+                            <constraint firstItem="nXk-gi-ftV" firstAttribute="top" secondItem="EGI-VP-lGw" secondAttribute="top" constant="12" id="Xki-bw-4ab"/>
+                            <constraint firstAttribute="trailing" secondItem="nXk-gi-ftV" secondAttribute="trailing" constant="50" id="mxP-CZ-yOm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="EGI-VP-lGw" secondAttribute="bottom" id="H2Q-pg-a2k"/>
+                    <constraint firstItem="EGI-VP-lGw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Rl6-Du-zpn"/>
+                    <constraint firstItem="EGI-VP-lGw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wxt-1B-qXG"/>
+                    <constraint firstAttribute="trailing" secondItem="EGI-VP-lGw" secondAttribute="trailing" id="X0F-ej-JoI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowButton" destination="93w-3f-snj" id="sOM-kH-Za9"/>
+                <outlet property="dateLblField" destination="nXk-gi-ftV" id="85h-4f-SM0"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="67.633928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="forward-arrow" width="64" height="64"/>
+    </resources>
+</document>
